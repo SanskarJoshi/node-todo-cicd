@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        repository = "asia-south1-docker.pkg.dev/ms-dev-396204/container-dev/"
+        repository = "asia-south1-docker.pkg.dev/ms-dev-396204/container-dev/to-do-app-container"
         namespace= ""
         deployment= "to-do-app-deployment"
         container=  "api"
