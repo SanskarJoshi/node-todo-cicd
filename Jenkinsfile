@@ -3,7 +3,7 @@ pipeline {
     environment {
         repository = "asia-south1-docker.pkg.dev/ms-dev-396204/container-dev/to-do-app-image"
         namespace= ""
-        deployment= "push-notification-deployment"
+        deployment= "to-do-app-deployment"
         container=  "api"
     }
     // stages{
