@@ -35,7 +35,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-              sh "docker build . -f ./Dockerfile -t ${repository}:${BUILD_NUMBER}  && docker push ${repository}:${BUILD_NUMBER}"
+              // sh "docker build . -f ./Dockerfile -t ${repository}:${BUILD_NUMBER}  && docker push ${repository}:${BUILD_NUMBER}"
+              sh "docker build . "
+
             }
         }
     }
