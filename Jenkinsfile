@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        repository = "asia-south1-docker.pkg.dev/noted-sled-398304/test-container"
+        repository = "asia-south1-docker.pkg.dev/noted-sled-398304/test-container/"
         namespace= ""
         deployment= "to-do-app-deployment"
         container=  "api"
