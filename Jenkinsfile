@@ -38,6 +38,7 @@ pipeline {
         stage('Build '){
             steps {
                 script {
+                    sh "gcloud auth configure-docker asia-south1-docker.pkg.dev"
                      sh "docker build . -f ./Dockerfile -t ${repository}:${BUILD_NUMBER}  && docker push ${repository}:${BUILD_NUMBER}"
                     
                 }
