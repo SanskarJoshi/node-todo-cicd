@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: todo-pod
+spec:
+  containers:
+  - name: todo-app
+    image: asia-south1-docker.pkg.dev/noted-sled-398304/test-container/todo-app-image
+    ports:
+    - containerPort: 8000
