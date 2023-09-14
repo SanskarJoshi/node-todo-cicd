@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
   - name: todo-app
-    image: asia-south1-docker.pkg.dev/noted-sled-398304/test-container/todo-app-image
+    image: asia-south1-docker.pkg.dev/noted-sled-398304/test-container/todo-app-image:latest
     ports:
     - containerPort: 8000
