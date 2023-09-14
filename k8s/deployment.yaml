@@ -17,7 +17,7 @@ spec:
       containers:
       - name: todo-app
         image: asia-south1-docker.pkg.dev/noted-sled-398304/test-container/todo-app-image:latest
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
 
         ports:
         - containerPort: 8000
