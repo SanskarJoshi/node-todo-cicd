@@ -2,8 +2,7 @@ version: '3.9'
 
 services:
   web:
-    # image: "sanskarjoshi/my-note-app:latest"
-    image: "asia-south1-docker.pkg.dev/noted-sled-398304/test-container/todo-app-image"
+    image: "sanskarjoshi1148/todo-app:latest"
     build: .
     ports:
       - "8000:8000"
