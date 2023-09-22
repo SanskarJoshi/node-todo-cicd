@@ -16,11 +16,9 @@ pipeline {
         stage("Push to DockerHub"){
             steps{
                 withCredentials([usernamePassword(credentialsId:"dockerHub",passwordVariable:"dockerHubPass",usernameVariable:"dockerHubUser")]){
-                     sh """
-                        docker login -u \$dockerHubUser --password-stdin <<< \$dockerHubPass &&
-                        docker tag todo-app \$dockerHubUser/todo-app:latest &&
-                        docker push \$dockerHubUser/todo-app:latest
-                        """
+                    sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass}"
+                    sh "docker tag todo-app ${env.dockerHubUser}/todo-app:latest"
+                    sh "docker push ${env.dockerHubUser}/todo-app:latest" 
                 }
             }
         }
