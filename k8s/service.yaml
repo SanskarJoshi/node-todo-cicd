@@ -12,4 +12,5 @@ spec:
       # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
       port: 80 
       targetPort: 8000
+      nodePort: 31000
      
